@@ -1,0 +1,49 @@
+img {
+    width: 80%;
+    height: auto;
+}
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(23964.jpg);
+    background-color: black;
+    height: 100vh;
+
+}
+.hero {
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content
+}
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 1rem;
+}
+.button {
+width: 100px;
+height: 40px;
+border: 1px solid #005cea ;
+border-radius: 10px;
+color: white;
+background-color: #005cea ;
+}
+p {
+    color: red;
+    font-size: small;
+    display: block;
+}
+#problem, #result {
+    font-size: 2vb;
+    padding: 5px;
+}
+.problem {
+    width: fit-content;
+}

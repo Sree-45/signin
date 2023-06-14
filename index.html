@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="hero">
+    
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-5 col-xl-5 order-2 order-lg-1">
+                <p class="text-center h1 fw-bold mb-3 mx-1 mx-md-4 mt-4">Sign up</p>
+                <form class="mx-1 mx-md-4">
+            
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+        
+                          <div class="form-outline">
+                            <input type="text" id="firstName" class="form-control " placeholder="First Name" required/>
+                            <p id="firstNameError"></p>
+                          </div>
+        
+                        </div>
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                            <input type="text" id="lastName" class="form-control " id="lastName" placeholder="Last Name" />
+                          </div>
+        
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-outline flex-fill mb-0">
+                         <input type="number" id="phoneNumber" class="form-control" placeholder="Phone Number"  required/>
+                         <p id="phoneError"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                            <label>Enter Date Of Birth</label>
+                            <input type="date" id="DOB" class="form-control "  placeholder="DOB" required  />
+                          </div>
+        
+                        </div>
+                    
+                        <div class="col-md-6 mb-2 pt-4">
+                            <select class="form-select" aria-label="Gender" id="Gender" required>
+                                <option selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Others</option>
+                            </select>
+          
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-outline flex-fill mb-0">
+                            <input type="email" id="email" class="form-control" placeholder="Email" required/>
+                            <p id="emailError"></p>
+                        </div>
+                    </div>
+
+      
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-outline flex-fill mb-0">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required/>
+                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            <p id="passwordError"></p>
+                        </div>
+                    </div>
+      
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-outline flex-fill mb-0">
+                            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required/>
+                            <p id="confirmError"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check d-flex justify-content-center mb-2">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="checkbox" required/>
+                        <label class="form-check-label" for="agree">
+                            I agree all statements in <a href="#!">Terms of service</a>
+                        </label>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-md-6 w-10 mb-2">
+        
+                          <div class="form-outline" id="problem">
+                        
+                          </div>
+        
+                        </div>
+                        <div class="col-md-6 mb-1">
+        
+                          <div class="form-outline">
+                            <input type="text" id="userAnswer" class="form-control "  placeholder="enter your answer" />
+                            <p id="result"></p>
+                          </div>
+        
+                        </div>
+
+                    </div>
+                    
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="submit" class="button" id="submit">submit</button>
+                    </div>
+                </form>
+      
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-7 d-flex justify-content-center order-1 ">
+                <img src="Data_security_05.jpg" class="img-fluid" alt="Sample image">
+            </div>
+            
+
+              
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
